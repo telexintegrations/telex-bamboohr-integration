@@ -28,7 +28,7 @@ public class BambooHRWebhookSetupService {
                         "17": "Job Title",
                         "acaStatus": "Employment Status: ACA Full-Time"
                     },
-                    "url": "https://heorkuapp.com/telex-webhook",
+                    "url": "https://heorkuapp.com/telex-webhook", //callback url
                     "format": "json",
                     "frequency": {
                         "minute": 1

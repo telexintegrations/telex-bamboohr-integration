@@ -28,7 +28,7 @@ public class BambooHRWebhookSetupService {
                         "17": "Job Title",
                         "acaStatus": "Employment Status: ACA Full-Time"
                     },
-                    "url": "https://heorkuapp.com/telex-webhook", //callback url
+                    "url": "https://heorkuapp.com/telex-webhook",
                     "format": "json",
                     "frequency": {
                         "minute": 1
@@ -45,6 +45,7 @@ public class BambooHRWebhookSetupService {
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         HttpEntity<String> request = new HttpEntity<>(webhookPayload, headers);
+
         ResponseEntity<String> response = restTemplate.postForEntity(appConfig.getBamboohrWebhookUrl(), request, String.class);
 
         System.out.println("Response: " + response.getBody());

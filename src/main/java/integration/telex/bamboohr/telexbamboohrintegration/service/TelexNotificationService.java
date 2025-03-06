@@ -1,35 +1,24 @@
 package integration.telex.bamboohr.telexbamboohrintegration.service;
 
-import integration.telex.bamboohr.telexbamboohrintegration.dtos.BambooHRRequest;
+import integration.telex.bamboohr.telexbamboohrintegration.config.AppConfig;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Service
 @RequiredArgsConstructor
 public class TelexNotificationService {
     @Value("telex.bamboohr.webhook.url")
-    private String telexWebhookUrl;
+    private AppConfig appConfig;
     private final RestTemplate restTemplate;
 
-    public void sendNotificationToTelex(BambooHRRequest notification) {
-        Map<String, String> payload = new HashMap<>();
-        payload.put("message", formatMessage(notification));
-        restTemplate.postForEntity(telexWebhookUrl, payload, String.class);
+    public void sendNotificationToTelex(String message) {
+        String payload = String.format("{\"text\": \"%s\"}", message);
+        sendPostRequest(appConfig.getTelexWebhookUrl(), payload);
     }
 
-    private String formatMessage(BambooHRRequest notification) {
-        return String.format("Employee %s with ID %s has been added to the team. Their job title is %s and works in " +
-                        "the %s department and are located in %s. You can reach them at %s.",
-                notification.employeeName(),
-                notification.employeeId(),
-                notification.employeeJobTitle(),
-                notification.employeeDepartment(),
-                notification.employeeLocation(),
-                notification.employeeEmail());
+    private void sendPostRequest(String url, String payload) {
+        restTemplate.postForEntity(url, payload, String.class);
     }
 }

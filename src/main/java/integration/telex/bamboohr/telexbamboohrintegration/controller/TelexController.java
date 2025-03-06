@@ -32,10 +32,5 @@ public class TelexController {
         return ResponseEntity.ok(telexNotificationService.sendNotificationToTelex(request));
     }
 
-    @PostMapping("/integration.json")
-    public ResponseEntity<String> integrationJson() {
-        return ResponseEntity.ok("IntegrationJson.json");
-    }
-
 }
 

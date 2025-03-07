@@ -1,0 +1,1 @@
+web: java -jar target/telex-bamboohr-integration-0.0.1-SNAPSHOT.jar

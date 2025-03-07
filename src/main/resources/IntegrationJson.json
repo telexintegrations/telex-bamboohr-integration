@@ -7,8 +7,8 @@
     "descriptions": {
       "app_name": "Bambo HR Integration",
       "app_description": "Integrate with BambooHR to notify HR teams about leave requests from employees, employee onboarding status, and or performance reviews. It could also handle schedules for interviews, track the number of applications for an open position.\nntegrate with BambooHR to notify HR teams about leave requests from employees, employee onboarding status, and or performance reviews. It could also handle schedules for interviews, track the number of applications for an open position.\n",
-      "app_logo": "http://8080/api/v1/bamboo-hr-integration/setup",
-      "app_url": "http://localhost:8080",
+      "app_logo": "https://telex-bamboohr-integration.onrender.com/bamboologo.jpg",
+      "app_url": "https://telex-bamboohr-integration.onrender.com",
       "background_color": "#fff"
     },
     "is_active": true,
@@ -26,6 +26,7 @@
         "default": "******"
       }
     ],
+    "target_ur": "https://telex-bamboohr-integration.onrender.com/api/v1/bamboo-hr-integration/setup",
     "tick_url": "https://telex-bamboohr-integration.onrender.com/api/v1/bamboo-hr-integration/setup"
   }
 }

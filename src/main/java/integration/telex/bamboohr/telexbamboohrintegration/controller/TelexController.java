@@ -30,6 +30,7 @@ public class TelexController {
 
     @PostMapping("/process")
     public void processBambooHrRequest(@RequestBody BambooHRPayload payload) {
+        log.info("Processing request from controller: {}", payload);
         bambooHRService.processBambooHRRequest(payload.getEmployees());
     }
 

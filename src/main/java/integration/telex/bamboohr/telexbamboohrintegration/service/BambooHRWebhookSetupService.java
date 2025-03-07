@@ -23,7 +23,7 @@ public class BambooHRWebhookSetupService {
                     "name": "New Employee Webhook",
                     "monitorFields": ["employeeNumber", "firstName"],
                     "postFields": {
-                        "employeeId": "Employee #",
+                        "employeeNumber": "Employee #",
                         "firstName": "First Name",
                         "lastName": "Last Name",
                         "17": "Job Title",

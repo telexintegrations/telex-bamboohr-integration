@@ -1,0 +1,299 @@
+{
+  "fields": [
+    {
+      "id": "8",
+      "name": "Address Line 1",
+      "alias": "address1"
+    },
+    {
+      "id": "9",
+      "name": "Address Line 2",
+      "alias": "address2"
+    },
+    {
+      "id": "4404",
+      "name": "Allergies",
+      "alias": "allergies"
+    },
+    {
+      "id": "6",
+      "name": "Birth Date",
+      "alias": "dateOfBirth"
+    },
+    {
+      "id": "4152",
+      "name": "Bonus: Amount",
+      "alias": "bonusAmount"
+    },
+    {
+      "id": "4154",
+      "name": "Bonus: Comment",
+      "alias": "bonusComment"
+    },
+    {
+      "id": "4151",
+      "name": "Bonus: Date",
+      "alias": "bonusDate"
+    },
+    {
+      "id": "4153",
+      "name": "Bonus: Reason",
+      "alias": "bonusReason"
+    },
+    {
+      "id": "10",
+      "name": "City",
+      "alias": "city"
+    },
+    {
+      "id": "4157",
+      "name": "Commission: Amount",
+      "alias": "commissionAmount"
+    },
+    {
+      "id": "4158",
+      "name": "Commission: Comment",
+      "alias": "commissionComment"
+    },
+    {
+      "id": "4156",
+      "name": "Commission: Date",
+      "alias": "commissionDate"
+    },
+    {
+      "id": "4017",
+      "name": "Compensation Change Reason",
+      "alias": "payChangeReason"
+    },
+    {
+      "id": "4021",
+      "name": "Compensation: Date",
+      "alias": "payRateEffectiveDate"
+    },
+    {
+      "id": "3991",
+      "name": "Country",
+      "alias": "country"
+    },
+    {
+      "id": "4",
+      "name": "Department",
+      "alias": "department"
+    },
+    {
+      "id": "4405",
+      "name": "Dietary Restrictions",
+      "alias": "dietaryRestrictions"
+    },
+    {
+      "id": "1355",
+      "name": "Division",
+      "alias": "division"
+    },
+    {
+      "id": "157",
+      "name": "EEO Job Category",
+      "alias": "eeo"
+    },
+    {
+      "id": "636",
+      "name": "Employee #",
+      "alias": "employeeNumber"
+    },
+    {
+      "id": "4451",
+      "name": "Employee Tax Type",
+      "alias": null
+    },
+    {
+      "id": "16",
+      "name": "Employment Status",
+      "alias": "employmentHistoryStatus"
+    },
+    {
+      "id": "4302",
+      "name": "Employment Status: ACA Full-Time",
+      "alias": "acaStatus"
+    },
+    {
+      "id": "1936",
+      "name": "Employment Status: Date",
+      "alias": "employeeStatusDate"
+    },
+    {
+      "id": "1037",
+      "name": "Ethnicity",
+      "alias": "ethnicity"
+    },
+    {
+      "id": "4057",
+      "name": "Facebook URL",
+      "alias": "facebook"
+    },
+    {
+      "id": "1",
+      "name": "First Name",
+      "alias": "firstName"
+    },
+    {
+      "id": "154",
+      "name": "Gender",
+      "alias": "gender"
+    },
+    {
+      "id": "3",
+      "name": "Hire Date",
+      "alias": "hireDate"
+    },
+    {
+      "id": "1357",
+      "name": "Home Email",
+      "alias": "homeEmail"
+    },
+    {
+      "id": "14",
+      "name": "Home Phone",
+      "alias": "homePhone"
+    },
+    {
+      "id": "4493",
+      "name": "Hours Per Pay Cycle",
+      "alias": "hoursPerPayCycle"
+    },
+    {
+      "id": "4402",
+      "name": "Instagram URL",
+      "alias": "instagram"
+    },
+    {
+      "id": "4047",
+      "name": "Job Information: Date",
+      "alias": null
+    },
+    {
+      "id": "17",
+      "name": "Job Title",
+      "alias": "jobTitle"
+    },
+    {
+      "id": "2",
+      "name": "Last Name",
+      "alias": "lastName"
+    },
+    {
+      "id": "4058",
+      "name": "LinkedIn URL",
+      "alias": "linkedIn"
+    },
+    {
+      "id": "18",
+      "name": "Location",
+      "alias": "location"
+    },
+    {
+      "id": "155",
+      "name": "Marital Status",
+      "alias": "maritalStatus"
+    },
+    {
+      "id": "5",
+      "name": "Middle Name",
+      "alias": "middleName"
+    },
+    {
+      "id": "13",
+      "name": "Mobile Phone",
+      "alias": "mobilePhone"
+    },
+    {
+      "id": "4333",
+      "name": "Original Hire Date",
+      "alias": "originalHireDate"
+    },
+    {
+      "id": "4403",
+      "name": "Overtime Rate",
+      "alias": "overtimeRate"
+    },
+    {
+      "id": "4042",
+      "name": "Overtime Status",
+      "alias": "exempt"
+    },
+    {
+      "id": "4330",
+      "name": "Paid per",
+      "alias": "payPer"
+    },
+    {
+      "id": "4386",
+      "name": "Pay Schedule",
+      "alias": "paySchedule"
+    },
+    {
+      "id": "19",
+      "name": "Pay rate",
+      "alias": "payRate"
+    },
+    {
+      "id": "156",
+      "name": "Pay type",
+      "alias": "payType"
+    },
+    {
+      "id": "4060",
+      "name": "Pinterest URL",
+      "alias": "pinterest"
+    },
+    {
+      "id": "1358",
+      "name": "Preferred Name",
+      "alias": "preferredName"
+    },
+    {
+      "id": "91",
+      "name": "Reporting to",
+      "alias": "reportingTo"
+    },
+    {
+      "id": "7",
+      "name": "SSN",
+      "alias": "ssn"
+    },
+    {
+      "id": "11",
+      "name": "State",
+      "alias": "state"
+    },
+    {
+      "id": "387",
+      "name": "Status",
+      "alias": "status"
+    },
+    {
+      "id": "4056",
+      "name": "Twitter Feed",
+      "alias": "twitterFeed"
+    },
+    {
+      "id": "15",
+      "name": "Work Email",
+      "alias": "workEmail"
+    },
+    {
+      "id": "635",
+      "name": "Work Ext.",
+      "alias": "workPhoneExtension"
+    },
+    {
+      "id": "634",
+      "name": "Work Phone",
+      "alias": "workPhone"
+    },
+    {
+      "id": "12",
+      "name": "Zip Code",
+      "alias": "zipcode"
+    }
+  ]
+}

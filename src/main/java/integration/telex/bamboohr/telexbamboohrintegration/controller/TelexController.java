@@ -1,6 +1,7 @@
 package integration.telex.bamboohr.telexbamboohrintegration.controller;
 
 
+import integration.telex.bamboohr.telexbamboohrintegration.dtos.BambooHRPayload;
 import integration.telex.bamboohr.telexbamboohrintegration.service.BambooHRService;
 import integration.telex.bamboohr.telexbamboohrintegration.service.BambooHRWebhookSetupService;
 import lombok.RequiredArgsConstructor;
@@ -25,9 +26,14 @@ public class TelexController {
         bambooHRWebhookSetupService.createWebhook();
     }
 
+//    @PostMapping("/process")
+//    public void processBambooHrRequest(@RequestBody Map<String, Object> request) {
+//        bambooHRService.processBambooHRRequest(request);
+//    }
+
     @PostMapping("/process")
-    public void processBambooHrRequest(@RequestBody Map<String, Object> request) {
-        bambooHRService.processBambooHRRequest(request);
+    public void processBambooHrRequest(@RequestBody BambooHRPayload payload) {
+        bambooHRService.processBambooHRRequest(payload.getEmployees());
     }
 
 }

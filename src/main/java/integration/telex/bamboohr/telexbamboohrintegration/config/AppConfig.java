@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
 
 @Configuration
 public class AppConfig {
@@ -23,7 +24,9 @@ public class AppConfig {
     private String bamboohrWebhookUrl;
 
     public String getBamboohrWebhookUrl() {
-        return bamboohrWebhookUrl + bamboohrCompanyName + "/v1/webhooks";
+        return UriComponentsBuilder.fromUriString(bamboohrWebhookUrl)
+                .pathSegment(bamboohrCompanyName, "v1", "webhooks")
+                .toUriString();
     }
 
     @Bean

@@ -2,6 +2,7 @@ package integration.telex.bamboohr.telexbamboohrintegration.service;
 
 import integration.telex.bamboohr.telexbamboohrintegration.config.AppConfig;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -9,14 +10,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class BambooHRWebhookSetupService {
-    private static AppConfig appConfig;
+    private final AppConfig appConfig;
+    private final RestTemplate restTemplate;
 
     public void createWebhook() {
-        RestTemplate restTemplate = new RestTemplate();
-
         String webhookPayload = """
                 {
                     "name": "New Employee Webhook",
@@ -46,8 +47,11 @@ public class BambooHRWebhookSetupService {
 
         HttpEntity<String> request = new HttpEntity<>(webhookPayload, headers);
 
-        ResponseEntity<String> response = restTemplate.postForEntity(appConfig.getBamboohrWebhookUrl(), request, String.class);
-
-        System.out.println("Response: " + response.getBody());
+        try {
+            ResponseEntity<String> response = restTemplate.postForEntity(appConfig.getBamboohrWebhookUrl(), request, String.class);
+            log.info("Webhook created successfully: {}", response.getBody());
+        } catch (Exception e) {
+            log.error("Failed to create webhook", e);
+        }
     }
 }

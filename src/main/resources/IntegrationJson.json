@@ -26,7 +26,7 @@
         "default": "******"
       }
     ],
-    "target_ur": "https://telex-bamboohr-integration.onrender.com/api/v1/bamboo-hr-integration/setup",
+    "target_url": "https://telex-bamboohr-integration.onrender.com/api/v1/bamboo-hr-integration/setup",
     "tick_url": "https://telex-bamboohr-integration.onrender.com/api/v1/bamboo-hr-integration/setup"
   }
 }
